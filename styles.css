@@ -1,0 +1,145 @@
+/* General Styling */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  color: #fff;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), 
+              url('background.jpg');
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background: rgba(0, 0, 0, 0.8);
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2rem;
+  color: #80d4ff;
+}
+
+header .instagram-link {
+  color: #fff;
+  text-decoration: none;
+  background: #28a745;
+  padding: 10px 20px;
+  border-radius: 5px;
+  margin-right: 10px;
+  font-size: 1rem;
+}
+
+header .instagram-link:hover {
+  background: #218838;
+}
+
+button {
+  background: #28a745;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #218838;
+}
+
+main {
+  padding: 40px 20px;
+}
+
+main .description {
+  text-align: left; /* Aligning the text to the left */
+  padding: 20px;
+}
+
+main .description h2 {
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+}
+
+main .description p {
+  font-size: 1.2rem;
+  margin: 0;
+}
+
+/* Upcoming Events Section Styling */
+.events {
+  margin-top: 40px;
+  text-align: center;
+}
+
+.events h2 {
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+}
+
+.events-container {
+  display: flex;
+  gap: 20px;  /* Space between cards */
+  overflow-x: auto;  /* Horizontal scroll */
+  padding-bottom: 20px;  /* To add space for the scrollbar */
+  scroll-snap-type: x mandatory;  /* Ensures the scroll snaps to each card */
+  justify-content: center; /* Center-align the event cards */
+}
+
+.event-card {
+  background: rgba(255, 255, 255, 0.2);
+  color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  width: 250px;  /* Fixed width for square card */
+  height: 250px;  /* Fixed height to make it square */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  scroll-snap-align: center;  /* Snaps each card to the center */
+}
+
+.event-card h3 {
+  font-size: 1.2rem;
+  margin: 10px 0;
+}
+
+.event-card .event-poster {
+  max-width: 100%;
+  max-height: 150px; /* Controls the size of the event poster */
+  border-radius: 8px;
+}
+
+.event-card:hover {
+  background: rgba(255, 255, 255, 0.4);
+}
+
+/* Optional: Scrollbar styling */
+.events-container::-webkit-scrollbar {
+  height: 10px;
+}
+
+.events-container::-webkit-scrollbar-thumb {
+  background-color: #80d4ff;
+  border-radius: 10px;
+}
+
+.events-container::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+/* Footer Styling */
+footer {
+  text-align: center;
+  padding: 10px;
+  background: rgba(0, 0, 0, 0.8);
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
