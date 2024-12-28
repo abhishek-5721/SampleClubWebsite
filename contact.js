@@ -4,13 +4,13 @@ import { getFirestore, collection, addDoc, serverTimestamp } from "https://www.g
 
 // Firebase configuration
 const firebaseConfig = {
-  apiKey: functions.config().firebase.firebase_api_key,
-  authDomain: functions.config().firebase.firebase_authdomain,
-  databaseURL: functions.config().firebase.database_url,
-  projectId: functions.config().firebase.firebase_project_id,
-  storageBucket: functions.config().firebase.storage_bucket,
-  messagingSenderId: functions.config().firebase.messenger_id,
-  appId: functions.config().firebase.app_id
+  apiKey: "AIzaSyDZN2ZKBclS2HudX2stHNJtiIRJjGTpGAw",
+  authDomain: "clubwebsite-1f787.firebaseapp.com",
+  databaseURL: "https://clubwebsite-1f787-default-rtdb.firebaseio.com",
+  projectId: "clubwebsite-1f787",
+  storageBucket: "clubwebsite-1f787.firebasestorage.app",
+  messagingSenderId: "415269066484",
+  appId: "1:415269066484:web:c9bfa106e3268e46dbf0a1"
 };
 
 // Initialize Firebase app and Firestore
